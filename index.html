@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Ifeloju Aladetan - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        .header .title {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 0.9em;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 0;
+        }
+        
+        .left-column {
+            background: #f8f9fa;
+            padding: 40px 30px;
+            border-right: 3px solid #00d4ff;
+        }
+        
+        .right-column {
+            padding: 40px 30px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            color: #ff6b35;
+            font-weight: 600;
+            border-bottom: 2px solid #ff6b35;
+            padding-bottom: 8px;
+        }
+        
+        .education-item, .experience-item {
+            margin-bottom: 25px;
+        }
+        
+        .education-item:last-child, .experience-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .institution, .job-title {
+            font-weight: 600;
+            font-size: 1.05em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .degree, .company {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 3px;
+        }
+        
+        .date {
+            color: #888;
+            font-size: 0.85em;
+            font-style: italic;
+        }
+        
+        .skills-category {
+            margin-bottom: 20px;
+        }
+        
+        .skills-category:last-child {
+            margin-bottom: 0;
+        }
+        
+        .category-name {
+            font-weight: 600;
+            color: #ff6b35;
+            margin-bottom: 8px;
+        }
+        
+        .skills-list {
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .activities-list, .volunteer-list, .certifications-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .activities-list li, .volunteer-list li, .certifications-list li {
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 12px;
+            color: #555;
+        }
+        
+        .activities-list li:before, .volunteer-list li:before, .certifications-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #00d4ff;
+            font-weight: bold;
+        }
+        
+        .projects-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .project-item {
+            margin-bottom: 15px;
+        }
+        
+        .project-name {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .project-link {
+            color: #ff6b35;
+            text-decoration: none;
+            font-size: 0.9em;
+            word-break: break-all;
+        }
+        
+        .project-link:hover {
+            text-decoration: underline;
+        }
+        
+        .hobbies-list {
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        ul li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .left-column {
+                border-right: none;
+                border-bottom: 3px solid #00d4ff;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>FORTUNE IFELOJU ALADETAN</h1>
+            <div class="title">Full Stack Developer</div>
+            <div class="contact-info">
+                <div class="contact-item">📞 +2347079560320</div>
+                <div class="contact-item">✉️ ifecodes01@gmail.com</div>
+                <div class="contact-item">📍 Lagos, Nigeria</div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="left-column">
+                <div class="section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-item">
+                        <div class="institution">University of Lagos (UNILAG)</div>
+                        <div class="degree">Bachelor's in Technology and Vocational Education</div>
+                        <div class="date">2024 - 2028</div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="skills-category">
+                        <div class="category-name">Programming Languages:</div>
+                        <div class="skills-list">JavaScript, Python, TypeScript, HTML, CSS</div>
+                    </div>
+                    <div class="skills-category">
+                        <div class="category-name">Frontend Development:</div>
+                        <div class="skills-list">ReactJS, React Native, VueJS, NextJS, Tailwind CSS, Firebase, Convex</div>
+                    </div>
+                    <div class="skills-category">
+                        <div class="category-name">Backend Development:</div>
+                        <div class="skills-list">NodeJS, ExpressJS, FastAPI, NextJS, MongoDB, PostgreSQL, Redis</div>
+                    </div>
+                    <div class="skills-category">
+                        <div class="category-name">Tools & Platforms:</div>
+                        <div class="skills-list">Git, GitHub, Render, Vercel, Netlify</div>
+                    </div>
+                    <div class="skills-category">
+                        <div class="category-name">Soft Skills:</div>
+                        <div class="skills-list">Communication, Teamwork, Problem-solving, Mentoring</div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Certifications</h2>
+                    <ul class="certifications-list">
+                        <li>Web Development - Elisha Development and Humanitarian Foundation (EDHF)</li>
+                        <li>Frontend Development - The Curve Africa</li>
+                        <li>Frontend Track Finalist - HNG13 Internship</li>
+                        <li>Backend Track Finalist - HNG13 Internship</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Extracurricular</h2>
+                    <ul class="activities-list">
+                        <li>Active participant in hackathons and coding competitions</li>
+                        <li>Active contributor to campus tech community and developer groups</li>
+                        <li>Church Media Team Member</li>
+                        <li>Community tech workshop facilitator</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Hobbies</h2>
+                    <div class="hobbies-list">Coding, Reading tech blogs, Video games, Community service</div>
+                </div>
+            </div>
+            
+            <div class="right-column">
+                <div class="section">
+                    <h2 class="section-title">Professional Experience</h2>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">HNG13 Internship (Finalist)</div>
+                        <div class="company">Frontend & Backend Tracks</div>
+                        <div class="date">2025</div>
+                        <ul>
+                            <li>Selected as finalist in both frontend and backend development tracks</li>
+                            <li>Collaborated with cross-functional teams on multiple full-stack projects</li>
+                            <li>Built responsive web applications and cross-platform mobile apps using React and React Native</li>
+                            <li>Integrated Firebase and Convex for real-time data synchronization in frontend applications</li>
+                            <li>Developed RESTful APIs using NodeJS, ExpressJS, and FastAPI</li>
+                            <li>Integrated backend services with MongoDB, PostgreSQL databases and Redis caching</li>
+                            <li>Participated in code reviews and agile development practices</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Volunteer Experience</h2>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Frontend & Backend Instructor</div>
+                        <div class="company">SoluTech by EDHF</div>
+                        <ul>
+                            <li>Taught HTML, CSS, JavaScript, and modern frameworks to aspiring developers</li>
+                            <li>Designed curriculum and hands-on projects for backend development with NodeJS</li>
+                            <li>Mentored students in building full-stack applications from concept to deployment</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Technical Mentor</div>
+                        <div class="company">The Curve Africa by Kora</div>
+                        <ul>
+                            <li>Provided one-on-one mentorship to junior developers on frontend and backend technologies</li>
+                            <li>Guided mentees through debugging, code optimization, and best practices</li>
+                            <li>Conducted weekly code review sessions and technical workshops</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Media Team Member</div>
+                        <div class="company">Church Media Ministry</div>
+                        <ul>
+                            <li>Manage digital content and technical aspects of church media presentations</li>
+                            <li>Collaborate with team to deliver high-quality multimedia experiences</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Projects</h2>
+                    <ul class="projects-list">
+                        <li class="project-item">
+                            <div class="project-name">Unisport-X</div>
+                            <div class="project-link">https://unisport-x.vercel.app</div>
+                            <div style="color: #666; font-size: 0.9em; margin-top: 5px;">University sports management platform built with modern web technologies</div>
+                        </li>
+                        <li class="project-item">
+                            <div class="project-name">QuizNova AI</div>
+                            <div class="project-link">https://quiznova-ai.vercel.app</div>
+                            <div style="color: #666; font-size: 0.9em; margin-top: 5px;">AI-powered quiz generation platform with interactive learning features</div>
+                        </li>
+                        <li class="project-item">
+                            <div class="project-name">HNG Internship Projects</div>
+                            <div style="color: #666; font-size: 0.9em; margin-top: 5px;">Multiple full-stack applications developed during HNG13 internship program</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
